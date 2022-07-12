@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         ebi-tool
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/ebiebi-pg/bro3-tool
 // @version      0.1
 // @description  同盟遠征支援ツール
 // @author       Ebi
@@ -56,7 +56,7 @@ function scriptLoad(){
         }
         try {
             let script = document.createElement('script');
-            script.src = SCRIPTS[LOADSCRIPTS];
+            script.src = SCRIPTS[LOADSCRIPTS] + "?" + String(Math.floor(Math.random() * 10000000000) + 1);
             document.body.appendChild(script);
             if(LOADSCRIPTS++ < SCRIPTS.length){
                 script.onload = function(){ scriptLoad(); };
