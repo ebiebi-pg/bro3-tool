@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ebi-tool
 // @namespace    https://github.com/ebiebi-pg/bro3-tool
-// @version      0.1
+// @version      0.2
 // @description  同盟遠征支援ツール
 // @author       Ebi
 // @match        https://*.3gokushi.jp/*
