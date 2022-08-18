@@ -31,12 +31,15 @@ var SCRIPTS = [
 
 var LOADSCRIPTS = 0;
 
+var BROWNO = 0;
+var APIKEY = 0;
+
 (function() {
     try {
         if(!location.href.match(/info/)){
             var srcElm = $x("//script[@src='" + SCRIPTS[SCRIPTS.length - 1] + "']");
             if(srcElm != null && srcElm != undefined){
-                main();
+                main(BROWNO, APIKEY);
             }else{
                 scriptLoad();
             }
